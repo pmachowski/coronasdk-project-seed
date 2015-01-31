@@ -1,0 +1,69 @@
+--
+-- Code by Piotr Machowski <piotr@machowski.co>
+--
+
+settings =
+{
+	orientation =
+	{
+		default = "landscapeRight",
+		supported =
+		{
+			"landscapeRight",
+			"landscapeLeft"
+		},
+	},
+
+	iphone =
+	{
+		plist =
+		{
+			CFBundleDisplayName = "The Project",
+			MinimumOSVersion = "6.0",
+			UIStatusBarHidden = true,
+			UIPrerenderedIcon = true,
+			UIApplicationExitsOnSuspend = false,
+
+			UIInterfaceOrientation = "UIInterfaceOrientationLandscapeRight",
+			UISupportedInterfaceOrientations =
+			{
+				"UIInterfaceOrientationLandscapeRight",
+				"UIInterfaceOrientationLandscapeLeft"
+			},
+
+			UIAppFonts =
+			{
+			},
+
+			CFBundleIconFile = "Icon.png",
+			CFBundleIconFiles =
+			{
+				"Icon.png",
+				"Icon@2x.png",
+				"Icon-40.png",
+				"Icon-40@2x.png",
+				"Icon-60.png",
+				"Icon-60@2x.png",
+				"Icon-72.png",
+				"Icon-72@2x.png",
+				"Icon-76.png",
+				"Icon-76@2x.png",
+				"Icon-Small-50.png",
+				"Icon-Small-50@2x.png",
+				"Icon-Small.png",
+				"Icon-Small@2x.png"
+			},
+			CoronaUseIOS6LandscapeOnlyWorkaround = true, -- workaround for Game Center bug on iPods, iPhones running iOS 6.0
+		},
+	},
+
+	android =
+	{
+		largeHeap = true,
+		usesPermissions =
+		{
+			"android.permission.INTERNET",
+			"android.permission.ACCESS_NETWORK_STATE",
+		},
+	}
+}

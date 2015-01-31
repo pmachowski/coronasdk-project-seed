@@ -1,0 +1,2 @@
+#!/bin/sh
+luacheck --config=utility/luacheck.cfg TheProject
